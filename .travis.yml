@@ -7,6 +7,8 @@ install:
   - pip install -r requirements.txt
 
 script:
+  - pylint main.py
+  - pylint test/test.py
   - python -m unittest test.test
   - coverage run --source=main -m unittest
   - coveralls
