@@ -8,5 +8,6 @@ install:
 
 script:
   - python -m unittest test.test
+  - coverage run --source=main -m unittest
 
 
