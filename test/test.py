@@ -28,21 +28,21 @@ class TestCombineDicts(unittest.TestCase):
 
     def test_result_3(self):
         """ Function to test raising ValueError"""
-        a = {'a': 560.87, 'd': True}
-        b = {'a': 'dd', 'd': 100}
-        self.assertRaises(ValueError, function, a, b)
+        dict_1 = {'a': 560.87, 'd': True}
+        dict_2 = {'a': 'dd', 'd': 100}
+        self.assertRaises(ValueError, function, dict_1, dict_2)
 
     def test_result_4(self):
         """ Function to test raising KeyError"""
-        a = {'a': 300, 'dd': 100}
-        b = {'a': 300, 'b': 100}
-        self.assertRaises(KeyError, function, a, b)
+        dict_1 = {'a': 300, 'dd': 100}
+        dict_2 = {'a': 300, 'b': 100}
+        self.assertRaises(KeyError, function, dict_1, dict_2)
 
     def test_result_5(self):
         """ Function to test raising KeyError"""
-        a = {'a': 300, 'D': 100}
-        b = {'a': 300, 'b': 100}
-        self.assertRaises(KeyError, function, a, b)
+        dict_1 = {'a': 300, 'D': 100}
+        dict_2 = {'a': 300, 'b': 100}
+        self.assertRaises(KeyError, function, dict_1, dict_2)
 
 
 if __name__ == '__main__':
