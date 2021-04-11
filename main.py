@@ -36,11 +36,5 @@ def combine_dicts(*args: dict) -> dict:
     return result
 
 
-def main():
-    a = {'a': 100, 'b': 200}
-    b = {'a': 200, 'c': 300}
-    print(combine_dicts(a, b))
-
-
 if __name__ == '__main__':
-    main()
+    pass
